@@ -6,8 +6,8 @@ import {
 import ListaItens from './src/components/ListaItens';
 
 class catalogoProdutos extends Component {
-  render() {
-    return (
+  render() {    
+    return (      
       <ListaItens />
     );
   }
