@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     View
 } from 'react-native';
-
+import Axios from 'axios';
 import Itens from './Itens';
 
 export default class ListaItens extends Component {
