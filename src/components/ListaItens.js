@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     View
 } from 'react-native';
-import Axios from 'axios';
+import axios from 'axios';
 import Itens from './Itens';
 
 export default class ListaItens extends Component {
@@ -14,9 +14,17 @@ export default class ListaItens extends Component {
     // }
 
     //2º
-    // componentWillMount() {
-    //     console.log('Fazer alguma coisa antes de renderizar');
-    // }
+    componentWillMount() {
+        //console.log('Fazer alguma coisa antes de renderizar');
+
+        //requisição HTTP
+        //retorna uma promise
+        axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
+            .then((response) => {
+                console.log(response);
+            })
+            .catch(() => console.log('erro'));
+    }
 
     //4º
     // componentDidMount() {
