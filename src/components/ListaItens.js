@@ -37,7 +37,7 @@ export default class ListaItens extends Component {
         //console.log('Objeto é renderizado');
         return (
             <View>
-                {this.state.listaItens.map(item => (<Text key={item.titulo}>{item.titulo}</Text>))}
+                {this.state.listaItens.map(item => (<Itens key={item.titulo} item={item} />))}
             </View>
         );
     }
